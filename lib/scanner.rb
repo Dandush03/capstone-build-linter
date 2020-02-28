@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-require_relative '../lib/buffer.rb'
-require_relative '../lib/coloring.rb'
+require_relative 'buffer.rb'
+require_relative 'log.rb'
 
 # Review Files For Errors
 class Scanner
@@ -10,7 +10,7 @@ class Scanner
     @file = Buffer.new(path)
     @file.read
     @lines = @file.lines
-    @log = ''
+    @log = Log.new
   end
 
   def indentation
@@ -19,34 +19,26 @@ class Scanner
     @lines.each_with_index do |line, index|
       indent = line[/\A */].size
       counter -= 1 if line.match(/}/)
-      break unless indent_error(counter, index) == false
+      break if indent_error(counter, index)
 
-      indent_warning(counter, index, indent)
+      indent_warning(counter, index, indent) if indent != counter * 2
       counter += 1 if line.match(/{/)
     end
   end
 
   def indent_warning(counter, index, indent)
-    return unless indent != counter * 2
-
-    @log += 'DRev '.magenta
-    @log += 'Indentation '
-    @log += 'Warning:[201]'.yellow
-    @log += "\n  Line #{index + 1}: ".cyan
-    @log += "Expected indent of #{counter * 2} not #{indent}\n"
+    temp = "Expected indent of #{counter * 2} spaces not #{indent} spaces"
+    @log.warning('Indentation', 201, index + 1, temp)
   end
 
   def indent_error(counter, index)
-    temp = false
+    bool = false
     if counter.negative?
-      @log += 'DRev '.magenta
-      @log += 'Missing Bracked '
-      @log += 'Error:[101]'.red
-      @log += "\n  Line #{index + 1}: ".cyan
-      @log += "Expected closing braked before this line\n"
-      temp = true
+      temp = 'Expected closing braked before this line'
+      @log.error('Missing Bracked', 101, index + 1, temp, 'Indentation')
+      bool = true
     end
-    temp
+    bool
   end
 
   def line_after_block
@@ -57,11 +49,7 @@ class Scanner
 
       next if @lines[index + 1].strip.empty?
 
-      @log += 'DRev '.magenta
-      @log += 'Empty Line Missing '
-      @log += 'Warning:[202]'.yellow
-      @log += "\n  Line #{index + 1}: ".cyan
-      @log += "Expected Empty Line\n"
+      @log.warning('Empty Line Missing', 202, index + 1, 'Expected Empty Line')
     end
   end
 end
