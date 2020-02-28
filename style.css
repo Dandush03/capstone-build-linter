@@ -230,7 +230,6 @@ section>h6 {
   height: 29px;
   overflow: hidden;
 }
-
 .cta>a:hover {
   margin-top: -32px;
 }
@@ -309,4 +308,4 @@ section>h6 {
 
 .wrapper .piped {
   float: left;
-}
+

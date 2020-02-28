@@ -4,10 +4,14 @@
 
 require_relative '../lib/scanner.rb'
 
-read = Scanner.new('style.css')
-read.indentation
-read.line_after_block
 
-read.log.filter
-read.log.err_list
-puts read.log.error_list
+
+Dir.glob(File.join("**","*.css")).each do |file| 
+	read = Scanner.new(file)
+	read.indentation
+	read.line_after_block
+	
+	read.log.filter
+	read.log.err_list
+	puts read.log.error_list
+end
