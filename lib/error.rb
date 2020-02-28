@@ -43,7 +43,7 @@ class Error
     log << 202
     log << 2
     log << 'Missing Line'
-    log << "Expected Empty Line Before Opening Brakect"
+    log << 'Expected Empty Line Before Opening Brakect'
     log << ''
     log << line
     log << path
