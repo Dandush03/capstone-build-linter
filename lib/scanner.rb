@@ -63,6 +63,7 @@ class Scanner
 
       next if @lines[index + 1].strip.empty?
 
+      puts index if index = @lines.length - 2
       # @log.warning('Empty Line Missing', 202, index + 1, 'Expected Empty Line'
 
       @log.log("W_202 #{@path} #{@line} \t \t")

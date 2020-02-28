@@ -301,11 +301,9 @@ section>h6 {
 .wraper ul .clear-left ul {
   float: left;
 }
-
 .wrapper .clear-left {
   width: fit-content;
 }
-
 .wrapper .piped {
   float: left;
-
+}

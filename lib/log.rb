@@ -12,7 +12,7 @@ class Log
   def initialize
     @err = Error.new
     @logger = []
-    @error_list = "\n"
+    @error_list = ''
   end
 
   def log(exp)

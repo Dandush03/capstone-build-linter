@@ -18,7 +18,7 @@ class Error
     log << 1
     log << 'Missing Bracked'
     log << 'Expected Closing Braked'
-    log << 'Stoped Looking for Indentation Issues Due To This Error'
+    log << 'Stoped Looking for Indentation in this File'
     log << line
     log << path
     log
