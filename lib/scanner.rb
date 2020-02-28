@@ -23,7 +23,10 @@ class Scanner
         @log += "DLint Indentation Error:\n  Line #{index + 1}: "
         @log += "expected indent of #{counter * 2} not #{indent}\n"
       end
-
+			if counter < 0
+        @log += "DLint Missing Bracked Error:\n  Line #{index + 1}: "
+        @log += "expected closing braked before this line\n"
+			end
       counter += 1 if line.match(/{/)
     end
   end
