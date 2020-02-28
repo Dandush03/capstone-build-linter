@@ -23,7 +23,11 @@ class Log
   def filter
     @logger.each do |log|
       if log[0] == 1 && log[2] == 1
-        puts "YEAY!"
+        @logger.each do |item|
+          if item[0] == 2 && item[2] == 1
+            @logger = @logger.reject{|search| search == item}
+          end
+        end
       end
     end
   end

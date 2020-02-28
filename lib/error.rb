@@ -35,9 +35,9 @@ class Error
     log << line
     log << path
     log
-	end
-	
-	def W_202(path, line, exp = nil, act = nil)
+  end
+
+  def W_202(path, line, exp = nil, act = nil)
     log = []
     log << 2
     log << 202
