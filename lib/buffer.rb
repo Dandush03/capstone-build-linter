@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-# rubocop: disable Metrics/MethodLength
 # Start Reading the File and check some values
 class Buffer
   attr_accessor :lines
@@ -17,5 +16,3 @@ class Buffer
     @lines
   end
 end
-
-# rubocop: enable Metrics/MethodLength
