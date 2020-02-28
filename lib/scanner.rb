@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require_relative '../lib/buffer.rb'
+require_relative '../lib/coloring.rb'
 
 # Review Files For Errors
 class Scanner
@@ -11,7 +12,6 @@ class Scanner
     @lines = @file.lines
     @log = ''
   end
-  # rubocop: disable Metrics/MethodLength
 
   def indentation
     indent = 0
@@ -19,17 +19,49 @@ class Scanner
     @lines.each_with_index do |line, index|
       indent = line[/\A */].size
       counter -= 1 if line.match(/}/)
-      if indent != counter * 2
-        @log += "DLint Indentation Error:\n  Line #{index + 1}: "
-        @log += "expected indent of #{counter * 2} not #{indent}\n"
-      end
-			if counter < 0
-        @log += "DLint Missing Bracked Error:\n  Line #{index + 1}: "
-        @log += "expected closing braked before this line\n"
-			end
+      break unless indent_error(counter, index) == false
+
+      indent_warning(counter, index, indent)
       counter += 1 if line.match(/{/)
     end
   end
 
-  # rubocop: enable Metrics/MethodLength
+  def indent_warning(counter, index, indent)
+    return unless indent != counter * 2
+
+    @log += 'DRev '.magenta
+    @log += 'Indentation '
+    @log += 'Warning:[201]'.yellow
+    @log += "\n  Line #{index + 1}: ".cyan
+    @log += "Expected indent of #{counter * 2} not #{indent}\n"
+  end
+
+  def indent_error(counter, index)
+    temp = false
+    if counter.negative?
+      @log += 'DRev '.magenta
+      @log += 'Missing Bracked '
+      @log += 'Error:[101]'.red
+      @log += "\n  Line #{index + 1}: ".cyan
+      @log += "Expected closing braked before this line\n"
+      temp = true
+    end
+    temp
+  end
+
+  def line_after_block
+    @lines.each_with_index do |line, index|
+      return 1 if index > @lines.length - 2
+
+      next unless line.match(/}/)
+
+      next if @lines[index + 1].strip.empty?
+
+      @log += 'DRev '.magenta
+      @log += 'Empty Line Missing '
+      @log += 'Warning:[202]'.yellow
+      @log += "\n  Line #{index + 1}: ".cyan
+      @log += "Expected Empty Line\n"
+    end
+  end
 end

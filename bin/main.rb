@@ -5,7 +5,6 @@
 require_relative '../lib/scanner.rb'
 
 read = Scanner.new('style.css')
-temp = read.indentation
+read.indentation
+read.line_after_block
 puts read.log
-puts "temp = #{temp[0]}"
-puts "temp = #{temp[1]}"
