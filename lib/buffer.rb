@@ -3,12 +3,11 @@
 # Start Reading the File and check some values
 class Buffer
   attr_accessor :lines
-  attr_reader :file, :log
+  attr_reader :file
 
   def initialize(file)
     @lines = []
     @file = file
-    @log = ''
   end
 
   def read

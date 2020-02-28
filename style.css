@@ -6,9 +6,9 @@ body {
 main>h6 {
   display: none;
 }
-section>h6 {
+section>h6 
   display: none;
-
+}
 
 .contents {
   background-position: 50% 100%;
