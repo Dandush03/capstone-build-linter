@@ -45,5 +45,3 @@ class Log
     end
   end
 end
-
-
