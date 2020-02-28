@@ -49,5 +49,31 @@ class Error
     log << path
     log
   end
+
+  def W_203(path, line, _exp = nil, _act = nil)
+    log = []
+    log << 2
+    log << 203
+    log << 3
+    log << 'End of File'
+    log << 'Expected Only One Empty Line At the End of the File'
+    log << ''
+    log << line
+    log << path
+    log
+  end
+
+  def W_204(path, line, _exp = nil, _act = nil)
+    log = []
+    log << 2
+    log << 204
+    log << 3
+    log << 'End of File'
+    log << 'Missing One Empty Line At the End of the File'
+    log << ''
+    log << line
+    log << path
+    log
+  end
 end
 # rubocop: enable Naming/MethodName

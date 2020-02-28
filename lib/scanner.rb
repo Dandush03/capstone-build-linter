@@ -63,10 +63,33 @@ class Scanner
 
       next if @lines[index + 1].strip.empty?
 
-      puts index if index = @lines.length - 2
       # @log.warning('Empty Line Missing', 202, index + 1, 'Expected Empty Line'
-
-      @log.log("W_202 #{@path} #{@line} \t \t")
+      puts index
+      puts line
+      @log.log("W_202 #{@path} #{index + 1} \t \t")
     end
+  end
+
+  def end_ln
+    temp = @lines[@file.line_num - 1]
+    temp2 = @lines[@file.line_num - 2]
+    end_ln_b(temp, temp2)
+    end_ln_a(temp)
+  end
+
+  def end_ln_b(temp, temp2)
+    return unless temp.nil? || temp.strip.empty?
+
+    return unless temp2.nil? || temp2.strip.empty?
+
+    @log.log("W_203 #{@path} #{@lines.length + 1} \t \t")
+  end
+
+  def end_ln_a(temp)
+    return if temp.nil? || temp.strip.empty?
+
+    return unless @lines[@file.line_num - 1].match(/}/)
+
+    @log.log("W_204 #{@path} #{@lines.length} \t \t")
   end
 end

@@ -1,11 +1,12 @@
 body {
-    margin: 0;
+  margin: 0;
   padding: 0;
 }
 
 main>h6 {
   display: none;
 }
+
 section>h6 {
   display: none;
 }
@@ -230,6 +231,7 @@ section>h6 {
   height: 29px;
   overflow: hidden;
 }
+
 .cta>a:hover {
   margin-top: -32px;
 }
@@ -301,9 +303,11 @@ section>h6 {
 .wraper ul .clear-left ul {
   float: left;
 }
+
 .wrapper .clear-left {
   width: fit-content;
 }
+
 .wrapper .piped {
   float: left;
 }
