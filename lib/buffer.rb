@@ -8,7 +8,7 @@ class Buffer
   def initialize(file)
     @lines = []
     @file = file
-    @line_num = 1
+    @line_num = 0
   end
 
   def read

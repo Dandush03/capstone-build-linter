@@ -1,0 +1,13 @@
+# frozen_string_literal: true
+
+require_relative '../lib/scanner.rb'
+
+RSpec.describe Buffer do
+  buffer = Buffer.new('test.css')
+  buffer.read
+  describe '#read' do
+    it 'return true if it opened the file' do
+      expect(buffer.line == 313)to eql(true):usoiii
+    end
+  end
+end
