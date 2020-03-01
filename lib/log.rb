@@ -9,7 +9,7 @@ module DRev
     def initialize
       @err = Error.new
       @logger = []
-      @error_list = ''
+      @error_list = "\n"
     end
 
     def log(exp)
