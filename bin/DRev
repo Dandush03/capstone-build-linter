@@ -5,7 +5,8 @@ require_relative '../lib/init_msg.rb'
 
 def init_read(file)
   read = DRev::Scanner.new(file)
-  print read.scn
+  str = read.scn
+  str
 end
 
 msg = DRev::InitMsg.new
@@ -16,7 +17,8 @@ counter = 0
 files.each do |file|
   counter += 1
   puts msg.file_start(file, counter)
-  init_read(file)
+  print init_read(file)
   puts msg.file_end
+  print "\n      NO ERRORS FOUND! GREAT JOB!\n" if init_read(file).split.empty? == true
 end
 puts msg.init_end(counter)
