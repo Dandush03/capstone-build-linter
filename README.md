@@ -1,48 +1,14 @@
-<a href="http://fvcproductions.com"><img src="https://avatars1.githubusercontent.com/u/4284691?v=3&s=200" title="FVCproductions" alt="FVCproductions"></a>
+# Daniel Review Gem (DRev) [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/Dandush03/capstone-build-linter)
+[![Gem](https://img.shields.io/gem/v/DRev?style=flat)](https://rubygems.org/gems/DRev)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)]()
+![GitHub followers](https://img.shields.io/github/followers/Dandush03?label=Dandush03&style=social)
+![Twitter URL](https://img.shields.io/twitter/url?label=d_laloush&style=social&url=https%3A%2F%2Ftwitter.com%2Fd_laloush)
 
-<!-- [![FVCproductions](https://avatars1.githubusercontent.com/u/4284691?v=3&s=200)](http://fvcproductions.com) -->
+> This is a Microverse Captsopne Project
 
-***INSERT GRAPHIC HERE (include hyperlink in image)***
+> CSS Lint
 
-# Daniel Review
 
-> Subtitle or Short Description Goes Here
-
-> ideally one sentence
-
-> include terms/tags that can be searched
-
-**Badges will go here**
-
-- build status
-- issues (waffle.io maybe)
-- devDependencies
-- npm package
-- coverage
-- slack
-- downloads
-- gitter chat
-- license
-- etc.
-
-[![Build Status](http://img.shields.io/travis/badges/badgerbadgerbadger.svg?style=flat-square)](https://travis-ci.org/badges/badgerbadgerbadger) [![Dependency Status](http://img.shields.io/gemnasium/badges/badgerbadgerbadger.svg?style=flat-square)](https://gemnasium.com/badges/badgerbadgerbadger) [![Coverage Status](http://img.shields.io/coveralls/badges/badgerbadgerbadger.svg?style=flat-square)](https://coveralls.io/r/badges/badgerbadgerbadger) [![Code Climate](http://img.shields.io/codeclimate/github/badges/badgerbadgerbadger.svg?style=flat-square)](https://codeclimate.com/github/badges/badgerbadgerbadger) [![Github Issues](http://githubbadges.herokuapp.com/badges/badgerbadgerbadger/issues.svg?style=flat-square)](https://github.com/badges/badgerbadgerbadger/issues) [![Pending Pull-Requests](http://githubbadges.herokuapp.com/badges/badgerbadgerbadger/pulls.svg?style=flat-square)](https://github.com/badges/badgerbadgerbadger/pulls) [![Gem Version](http://img.shields.io/gem/v/badgerbadgerbadger.svg?style=flat-square)](https://rubygems.org/gems/badgerbadgerbadger) [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org) [![Badges](http://img.shields.io/:badges-9/9-ff6799.svg?style=flat-square)](https://github.com/badges/badgerbadgerbadger)
-
-- For more on these wonderful ~~badgers~~ badges, refer to <a href="http://badges.github.io/badgerbadgerbadger/" target="_blank">`badgerbadgerbadger`</a>.
-
-***INSERT ANOTHER GRAPHIC HERE***
-
-[![INSERT YOUR GRAPHIC HERE](http://i.imgur.com/dt8AUb6.png)]()
-
-- Most people will glance at your `README`, *maybe* star it, and leave
-- Ergo, people should understand instantly what your project is about based on your repo
-
-> Tips
-
-- HAVE WHITE SPACE
-- MAKE IT PRETTY
-- GIFS ARE REALLY COOL
-
-> GIF Tools
 
 - Use <a href="http://recordit.co/" target="_blank">**Recordit**</a> to create quicks screencasts of your desktop and export them as `GIF`s.
 - For terminal sessions, there's <a href="https://github.com/chjj/ttystudio" target="_blank">**ttystudio**</a> which also supports exporting `GIF`s.
@@ -61,7 +27,7 @@
 
 > If your `README` has a lot of info, section headers might be nice.
 
-- [Installation](#installation)
+- [Installation](#Installation)
 - [Features](#features)
 - [Contributing](#contributing)
 - [Team](#team)
@@ -69,84 +35,68 @@
 - [Support](#support)
 - [License](#license)
 
-
----
-
-## Example (Optional)
-
-```javascript
-// code away!
-
-let generateProject = project => {
-  let code = [];
-  for (let js = 0; js < project.length; js++) {
-    code.push(js);
-  }
-};
-```
-
 ---
 
 ## Installation
+    
+- [Set-Up](#Set-Up)
+- [Install-Gem](#Installing-Gem)
 
-- All the `code` required to get started
-- Images of what it should look like
+<img src="https://gj8e4a.dm.files.1drv.com/y4mcxUdMRWunDajyvZOmNZCoYSg08V046vsBV6ATRaDblSY4wHJ-g3jY9XcGAGShEQjxsl0JQcH6zbcJYjKuY0SyXSdAwpajb4rWQOYso-KMrlAozEbrGcou8BFlSZDMWB81o5LxKgTDPvSJv6wHvuxYmpy4F_Hftl7AA6-ghaJ0iMyfNEkwTTouubugGEMkc9IQDURsTMhoht249Kfu47L1Q?width=739&height=503&cropmode=none" width=600></img>
 
 ### Clone
 
-- Clone this repo to your local machine using `https://github.com/fvcproductions/SOMEREPO`
+- Clone this repo to your local machine using `https://github.com/Dandush03/capstone-build-linter`
 
-### Setup
+### Set-Up
 
-- If you want more syntax highlighting, format your code like this:
+#### If you have already Install RUBY && GEMS Skip to [Install-Gem](#Installing-Gem) Section
 
-> update and install this package first
+- Lets start with updating our apt
 
-```shell
-$ brew update
-$ brew install fvcproductions
-```
+  > ```sudo apt-get update```
 
-> now install npm and bower packages
+- Then we need to install Ruby
 
-```shell
-$ npm install
-$ bower install
-```
+	> ```sudo apt-get install ruby-full```
 
-- For all the possible languages that support syntax highlithing on GitHub (which is basically all of them), refer <a href="https://github.com/github/linguist/blob/master/lib/linguist/languages.yml" target="_blank">here</a>.
+	Lets verify it's working correctly by opening a text editor and save the fallowing text as test.rb
+
+	> ```#!/usr/bin/env ruby```
+	<br>
+	> ```puts "Hello world!"```
+
+	In the terminal window, change directory to the directory where you saved test.rb. Run the command
+	> ```chmod +x test.rb```
+	<br>
+	> ```./test.rb```
+
+	Then you should see the message Hello world! displayed if Ruby is installed correctly.
+
+	If it didn't work, check [Ruby Installation Page](https://www.ruby-lang.org/en/documentation/installation/)
+
+- All that is left is to install Gem Package by typing in our Terminal
+
+	> ```sudo apt-get install rubygems```
+
+### Installing Gem
+
+#### After making sure you've all the [Set-Up](#Set-Up) Proccess Completed
+
+- lets start installing the bundle gem. (Skip this step if you already used Gems Before)
+
+	> ```gem install bundler```
+
+- Now we can install DRev Gem by typing
+
+	> ```gem install DRev```
+
+## Congratulation! Now You Can Start Using DRev
 
 ---
 
 ## Features
-## Usage (Optional)
-## Documentation (Optional)
-## Tests (Optional)
-
-- Going into more detail on code and technologies used
-- I utilized this nifty <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet" target="_blank">Markdown Cheatsheet</a> for this sample `README`.
-
----
-
-## Contributing
-
-> To get started...
-
-### Step 1
-
-- **Option 1**
-    - 🍴 Fork this repo!
-
-- **Option 2**
-    - 👯 Clone this repo to your local machine using `https://github.com/joanaz/HireDot2.git`
-
-### Step 2
-
-- **HACK AWAY!** 🔨🔨🔨
-
-### Step 3
-
-- 🔃 Create a new pull request using <a href="https://github.com/joanaz/HireDot2/compare/" target="_blank">`https://github.com/joanaz/HireDot2/compare/`</a>.
+## Usage
 
 ---
 
