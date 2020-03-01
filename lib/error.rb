@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 # rubocop: disable Naming/MethodName
 
 module DRev

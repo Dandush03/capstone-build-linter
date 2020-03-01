@@ -6,8 +6,6 @@ AllCops:
 
   DisplayCopNames: true
 
-require: rubocop-rspec
-
 Layout/LineLength:
   Max: 120
 Metrics/MethodLength:

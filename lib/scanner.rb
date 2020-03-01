@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 require_relative 'buffer.rb'
 require_relative 'log.rb'
 

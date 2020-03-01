@@ -1,9 +1,6 @@
-# frozen_string_literal: true
-
 module DRev
   # Start Const Msg
   class InitMsg
-    # rubocop: disable Metrics/AbcSize
     def init_start(counter)
       drev_str = "\n  Starting ".green
       drev_str += 'DRev'.magenta.bold
@@ -38,6 +35,5 @@ module DRev
       drev_str = '  Finished Reviewing File'.red
       drev_str
     end
-    # rubocop: enable Metrics/AbcSize
   end
 end

@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 module DRev
   # Start Reading the File and check some values
   class Buffer
