@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 
 lib = File.expand_path('lib', __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
@@ -14,6 +15,7 @@ Gem::Specification.new do |spec|
   spec.homepage      = 'https://github.com/Dandush03/capstone-build-linter'
   spec.license       = 'MIT'
 
+  # rubocop: disable Layout/LineLength
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
 
@@ -22,6 +24,7 @@ Gem::Specification.new do |spec|
   spec.files         = Dir.chdir(File.expand_path(__dir__)) do
     `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   end
+  # rubocop: enable Layout/LineLength
   spec.bindir        = 'bin'
   spec.executables   = ['main']
   spec.require_paths = ['lib']
@@ -31,5 +34,5 @@ Gem::Specification.new do |spec|
 
   spec.add_runtime_dependency 'main'
 
-  #spec.add_runtime_dependency "/bin/main.rb"
+  # spec.add_runtime_dependency "/bin/main.rb"
 end
