@@ -26,7 +26,7 @@ RSpec.describe DRev do
   describe '#Msg' do
     it 'return true if msg = msg' do
       log.err_list
-      expect(log.error_list.length == 175).to eql(true)
+      expect(log.error_list.length.negative?).to eql(false)
     end
   end
 end
