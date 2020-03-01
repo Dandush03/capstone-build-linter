@@ -1,8 +1,5 @@
-# frozen_string_literal: true
-
 require_relative '../lib/error.rb'
 
-# rubocop: disable Metrics/BlockLength
 # rubocop: disable Naming/VariableNumber
 
 RSpec.describe DRev do
@@ -43,6 +40,4 @@ RSpec.describe DRev do
     end
   end
 end
-
-# rubocop: enable Metrics/BlockLength
 # rubocop: enable Naming/VariableNumber

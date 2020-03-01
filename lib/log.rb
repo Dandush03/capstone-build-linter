@@ -1,9 +1,5 @@
-# frozen_string_literal: true
-
 require_relative '../lib/coloring.rb'
 require_relative '../lib/error.rb'
-
-# rubocop: disable Metrics/AbcSize:
 
 module DRev
   # Log Every Data Displayed
@@ -13,7 +9,7 @@ module DRev
     def initialize
       @err = Error.new
       @logger = []
-      @error_list = ''
+      @error_list = "\n"
     end
 
     def log(exp)
@@ -48,4 +44,3 @@ module DRev
     end
   end
 end
-# rubocop: enable Metrics/AbcSize:

@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 require_relative 'buffer.rb'
 require_relative 'log.rb'
 
@@ -22,6 +20,14 @@ module DRev
       @line = 1
     end
 
+    def indentation_fun(line)
+      if @idnt != @cnt && line.split.empty? == false
+        @log.log("W_201 #{@path} #{@line} #{@cnt} #{@idnt}")
+      elsif @idnt != @cnt && line.split.empty? == true
+        @log.log("W_204 #{@path} #{@line} #{@cnt} #{@idnt}")
+      end
+    end
+
     def indentation
       reset
       @lines.each do |line|
@@ -29,7 +35,7 @@ module DRev
         @cnt -= 2 if line.match(/}/)
         break if indent_error_opening(@cnt)
 
-        @log.log("W_201 #{@path} #{@line} #{@cnt} #{@idnt}") if @idnt != @cnt
+        indentation_fun(line)
         @cnt += 2 if line.match(/{/)
         @line += 1
       end

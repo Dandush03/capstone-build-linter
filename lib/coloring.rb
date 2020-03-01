@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 # Adding Console Colors
 class String
   def black

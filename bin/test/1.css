@@ -1,0 +1,350 @@
+body {
+  background-color: rgb(236, 238, 241);
+  font-family: AvenirNext, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-rows: 10% fit-content(35px) fit-content(35px) fit-content(700px) 13%;
+}
+
+.main-frm p {
+  margin: 0;
+  margin-bottom: 24px;
+  padding: 0;
+  padding-top: 6px;
+  font-size: 10px;
+  color: #444;
+}
+
+.sign-in-left {
+  display: grid;
+  grid-template-columns: 67% 33%;
+  float: right;
+  width: 350px;
+}
+
+.sign-in-left div {
+  margin-right: 3px;
+}
+
+.sign-in-label {
+  width: 100%;
+}
+
+.sign-in-label p {
+  color: rgb(80, 80, 80);
+  line-height: 18px;
+  font-size: 12px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+
+.sign-in-label a {
+  text-decoration: none;
+}
+
+.btn-style {
+  background-image: url(https://plugin.intuitcdn.net/identity-authn-core-ui/images/icon-whitelock@3x-76f33cec.png);
+  background-size: 10px auto;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  cursor: pointer;
+  background-color: rgb(0, 119, 197);
+  color: whitesmoke;
+  border-radius: 5px;
+  border: solid 0.5px #585858;
+  text-align: center;
+}
+
+.sign-in-button button {
+  background-position-x: 20px;
+  font-size: 13.5px;
+  font-weight: 400;
+  height: 34px;
+  width: 103px;
+  margin: 0 0 0 8px;
+  padding-left: 20px;
+}
+
+.logo {
+  text-align: center;
+}
+
+.logo img {
+  width: 118px;
+  height: 35px;
+  object-fit: none;
+  object-position: 0 0;
+}
+
+.icons {
+  margin-top: 20px;
+  align-items: center;
+  display: grid;
+  justify-content: center;
+}
+
+.icons ul {
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+
+.icons li {
+  display: inline;
+}
+
+.mint-favicon {
+  background-repeat: no-repeat;
+}
+
+.icon-1 button {
+  background-image: url("https://plugin.intuitcdn.net/identity-authn-core-ui/images/mint-favicon-4accf8f4.svg");
+  width: 23px;
+  height: 23px;
+  background-color: transparent;
+  border: none;
+  background-repeat: no-repeat;
+}
+
+.mint-favicon button {
+  margin-right: 4px;
+  width: 23px;
+  height: 23px;
+  background-color: transparent;
+  border: none;
+  background-repeat: no-repeat;
+}
+
+.icon-2 button {
+  background-image: url("https://plugin.intuitcdn.net/identity-authn-core-ui/images/quickbooks-favicon@2x-c89488e8.svg");
+}
+
+.icon-3 button {
+  background-image: url("https://plugin.intuitcdn.net/identity-authn-core-ui/images/tt-favicon@2x-fbd64ab8.svg");
+}
+
+.mint-text button {
+  background-color: transparent;
+  border: none;
+  background-repeat: no-repeat;
+  margin-right: 9px;
+}
+
+.text-1 button {
+  background-image: url("https://plugin.intuitcdn.net/identity-authn-core-ui/images/mint-text-0fa36974.svg");
+  width: 37px;
+  height: 20px;
+}
+
+.text-2 button {
+  background-image: url("https://plugin.intuitcdn.net/identity-authn-core-ui/images/quick-books-text-db6c72bf.svg");
+  width: 98px;
+  height: 22px;
+}
+
+.text-3 button {
+  background-image: url("https://plugin.intuitcdn.net/identity-authn-core-ui/images/turbo-tax-text-9bc025c5.svg");
+  width: 74px;
+  height: 22px;
+}
+
+.frm {
+  justify-content: center;
+  display: grid;
+}
+
+.frm-container {
+  text-align: center;
+  background-color: white;
+  padding: 30px;
+  margin-top: 20px;
+  border-color: rgb(199, 199, 199);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 2px;
+  border-bottom: none;
+}
+
+.frm-header h1 {
+  color: rgb(76, 76, 76);
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+.frm-header h2 {
+  color: rgb(76, 76, 76);
+  font-size: 14px;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+}
+
+.frm-header a {
+  color: rgb(0, 119, 197);
+  font-size: 12px;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.frm-header div {
+  padding-top: 20px;
+}
+
+.main-frm {
+  display: grid;
+}
+
+.main-frm label {
+  color: rgb(64, 64, 64);
+  font-size: 14px;
+  font-weight: 400px;
+  padding-bottom: 6px;
+  line-height: 25px;
+  text-align: left;
+}
+
+.main-frm input {
+  font-family: AvenirNext, Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  height: 34px;
+  font-size: 16.8px;
+  font-weight: 400px;
+  padding-left: 8px;
+  border-color: rgb(193, 197, 200);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 3px;
+}
+
+.main-frm div {
+  display: grid;
+  text-align: left !important;
+}
+
+.pwd input {
+  background-image: url(https://plugin.intuitcdn.net/identity-authn-core-ui/images/lock-left-grey@3x-a1ab5bd1.png);
+  background-repeat: no-repeat;
+  background-size: 20px auto;
+  background-position-x: 96%;
+  background-position-y: center;
+}
+
+.frm-btn button {
+  background-position-x: 32%;
+  font-size: 15.75px;
+  font-weight: 400px;
+  height: 44px;
+  width: 100%;
+  padding-left: 10%;
+  background-size: 12px auto;
+  margin-bottom: 30px;
+}
+
+.frm-footer {
+  margin-top: 20px;
+}
+
+.frm-footer p {
+  font-size: 12px;
+  color: rgb(117, 117, 117);
+  font-style: italic;
+  line-height: 18px;
+  margin: 5px;
+}
+
+.frm-footer a {
+  text-decoration: none;
+  color: rgb(0, 119, 197);
+}
+
+.re-captcha {
+  border-color: rgb(199, 199, 199);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 2px;
+  border-top: none;
+  padding: 20px;
+  text-align: center;
+}
+
+.re-captcha p {
+  color: rgb(141, 144, 150);
+  font-size: 10px;
+  font-weight: 400px;
+  margin: 0;
+  padding: 0;
+}
+
+.re-captcha a {
+  text-decoration: none;
+  color: rgb(0, 119, 197);
+}
+
+.page-footer {
+  text-align: center;
+  margin: 30px;
+}
+
+.page-footer ul {
+  margin: 0;
+  padding: 0;
+}
+
+.page-footer li {
+  display: inline;
+  padding-right: 10px;
+}
+
+.page-footer a {
+  color: rgb(80, 80, 80);
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400px;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+.page-footer p {
+  color: rgb(80, 80, 80);
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400px;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+.fixed-button button {
+  position: fixed;
+  right: 5%;
+  bottom: 0;
+  color: whitesmoke;
+  background-color: rgb(107, 108, 114);
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 400px;
+  line-height: 21px;
+  padding: 10px 12px;
+  border-style: solid;
+  border: solid;
+}
+
+.sign-in-label a p {
+  color: rgb(0, 119, 197);
+  line-height: 18px;
+  font-size: 12px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  width: 100%;
+}
+
