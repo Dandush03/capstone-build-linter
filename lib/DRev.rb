@@ -7,7 +7,6 @@ module DRev
     # frozen_string_literal: true
 
     # !/usr/bin/env ruby
-
     require_relative '../lib/scanner.rb'
     def init_read(file)
       read = DRev::Scanner.new(file)

@@ -1,4 +1,2 @@
- #!/usr/bin/env ruby
- require "DRev/cli"
-
- Lorem::CLI.start
+#!/usr/bin/env ruby
+require_relative '../bin/main.rb'

@@ -1,0 +1,30 @@
+PATH
+  remote: .
+  specs:
+    DRev (0.1.0)
+      main
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    arrayfields (4.9.2)
+    chronic (0.10.2)
+    fattr (2.4.0)
+    main (6.2.3)
+      arrayfields (~> 4.7, >= 4.7.4)
+      chronic (~> 0.6, >= 0.6.2)
+      fattr (~> 2.2, >= 2.2.0)
+      map (~> 6.1, >= 6.1.0)
+    map (6.6.0)
+    rake (10.5.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  DRev!
+  bundler (~> 1.17)
+  rake (~> 10.0)
+
+BUNDLED WITH
+   1.17.2
