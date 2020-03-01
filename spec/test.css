@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 main>h6 {
   display: none;
 }
@@ -310,4 +311,3 @@ section>h6 {
 .wrapper .piped {
   float: left;
 }
-
