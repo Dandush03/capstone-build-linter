@@ -2,15 +2,15 @@
 
 require_relative '../lib/scanner.rb'
 
-RSpec.describe Buffer do
-  buffer = Buffer.new('test.css')
-  buffer.read
-
+RSpec.describe DRev do
   describe '#file_exits?' do
     it 'return true if file exists' do
-      expect(File.exist?('test.css')).to eql(true)
+      expect(File.exist?('spec/test.css')).to eql(true)
     end
   end
+
+  buffer = DRev::Buffer.new('spec/test.css')
+  buffer.read
 
   describe '#read' do
     it 'return true if line eq the number of line in the doc' do

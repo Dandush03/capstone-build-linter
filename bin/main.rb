@@ -4,16 +4,12 @@
 
 require_relative '../lib/scanner.rb'
 def init_read(file)
-  read = Scanner.new(file)
-  read.indentation
-  read.line_after_block
-  read.end_ln
-  read.log.filter
-  read.log.err_list
-  print read.log.error_list
+  read = DRev::Scanner.new(file)
+  print read.scn
 end
 
-files = Dir.glob(File.join('**', '*.css'))
+files = Dir.glob(File.join('**', '*.css')).reject { |f| f['spec/'] }
+counter = files.count
 files.each do |file|
   puts ''
   init_read(file)
