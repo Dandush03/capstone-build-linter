@@ -1,0 +1,24 @@
+#!/usr/bin/env ruby
+
+# frozen_string_literal: true
+
+require_relative '../lib/scanner.rb'
+require_relative '../lib/init_msg.rb'
+
+def init_read(file)
+  read = DRev::Scanner.new(file)
+  print read.scn
+end
+
+msg = DRev::InitMsg.new
+
+files = Dir.glob(File.join('**', '*.css')).reject { |f| f['spec/'] }
+puts msg.init_start(files.count)
+counter = 0
+files.each do |file|
+  counter += 1
+  puts msg.file_start(file, counter)
+  init_read(file)
+  puts msg.file_end
+end
+puts msg.init_end(counter)
