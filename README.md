@@ -15,11 +15,15 @@
 ## Table of Contents
 
 - [Installation](#Installation)
+	- [Set-Up](#Set-Up)
+	- [Install-Gem](#Installing-Gem)
 - [Features](#features)
-- [Contributing](#Contributing)
+- [How to Use](#How-to-Use)
 - [Author](#Authors)
-- [Acknowledgments](#Acknowledgments)
+- [Built With](#Built-With)
 - [Support](#Support)
+- [Contributing](#Contributing)
+- [Acknowledgments](#Acknowledgments)
 - [License](#License)
 
 ---
@@ -101,7 +105,7 @@ As Far as this version realease DRev will check the fallowing issue:
 
 ---
 
-## How to Use?
+## How to Use
 
 Isseay and Simple! Just open the folder on your terminal witch you want to check and type the flowwing command!
 
@@ -139,6 +143,12 @@ Reach out to me at one of the following places!
 
 Give a ⭐️ if you like this project!
 ---
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!
+
+Feel free to check the [issues page](./issues/).
 
 ## License
 
