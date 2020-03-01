@@ -12,9 +12,7 @@
 
 ---
 
-## Table of Contents (Optional)
-
-> If your `README` has a lot of info, section headers might be nice.
+## Table of Contents
 
 - [Installation](#Installation)
 - [Features](#features)
@@ -39,22 +37,28 @@
 
 - Lets start with updating our apt
 
-  > ```sudo apt-get update```
+  ```bash
+	sudo apt-get update
+	```
 
 - Then we need to install Ruby
 
-	> ```sudo apt-get install ruby-full```
+	```bash
+	sudo apt-get install ruby-full
+	```
 
 	Lets verify it's working correctly by opening a text editor and save the fallowing text as test.rb
 
-	> ```#!/usr/bin/env ruby```
-	<br>
-	> ```puts "Hello world!"```
+	```bash
+	#!/usr/bin/env ruby
+	puts "Hello world!"
+	```
 
 	In the terminal window, change directory to the directory where you saved test.rb. Run the command
-	> ```chmod +x test.rb```
-	<br>
-	> ```./test.rb```
+	```bash
+	chmod +x test.rb
+	./test.rb
+	```
 
 	Then you should see the message Hello world! displayed if Ruby is installed correctly.
 
@@ -62,7 +66,9 @@
 
 - All that is left is to install Gem Package by typing in our Terminal
 
-	> ```sudo apt-get install rubygems```
+	```bash
+	sudo apt-get install rubygems
+	```
 
 ### Installing Gem
 
@@ -70,11 +76,15 @@
 
 - lets start installing the bundle gem. (Skip this step if you already used Gems Before)
 
-	> ```gem install bundler```
+	```bash
+	gem install bundler
+	```
 
 - Now we can install DRev Gem by typing
 
-	> ```gem install DRev```
+	```bash
+	gem install DRev
+	```
 
 ## Congratulation! Now You Can Start Using DRev
 
@@ -91,11 +101,13 @@ As Far as this version realease DRev will check the fallowing issue:
 
 ---
 
-## Usege
+## How to Use?
 
 Isseay and Simple! Just open the folder on your terminal witch you want to check and type the flowwing command!
 
->```DRev```
+```bash
+DRev
+```
 
 ## Author
 
