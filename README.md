@@ -143,6 +143,9 @@ Feel free to check the [issues page](./issues/).
 
 ## Acknowledgments
 
+- Hat tip to anyone whose code was used
+- Thanks to Microverse for it Support!
+
 ---
 
 ## License
@@ -156,6 +159,7 @@ Feel free to check the [issues page](./issues/).
 
 **Danie Laloush**
 
+- Portafolio: [dlaloush.me](https://dlaloush.me) (Comming Soon)
 - Linkedin: [Daniel Laloush](https://www.linkedin.com/in/daniel-laloush-0a7331a9)
 - Github: [@Dandush03](https://github.com/Dandush03)
 - Twitter: [@d_laloush](https://twitter.com/d_laloush)
