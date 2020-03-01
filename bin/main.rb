@@ -1,6 +1,8 @@
+#!
+
 # frozen_string_literal: true
 
-# !/usr/bin/env ruby
+#!/usr/bin/env ruby
 
 require_relative '../lib/scanner.rb'
 def init_read(file)

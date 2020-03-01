@@ -3,7 +3,7 @@ require "DRev/version"
 module DRev
   class Error < StandardError; end
 
-  class CLI < Main
+  class CLI
     # frozen_string_literal: true
 
     # !/usr/bin/env ruby

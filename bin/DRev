@@ -1,0 +1,4 @@
+ #!/usr/bin/env ruby
+ require "DRev/cli"
+
+ Lorem::CLI.start
