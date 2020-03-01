@@ -19,12 +19,12 @@
 	- [Install-Gem](#Installing-Gem)
 - [Features](#features)
 - [How to Use](#How-to-Use)
-- [Author](#Authors)
 - [Built With](#Built-With)
 - [Support](#Support)
 - [Contributing](#Contributing)
 - [Acknowledgments](#Acknowledgments)
 - [License](#License)
+- [Author](#Authors)
 
 ---
 
@@ -39,7 +39,7 @@
 
 #### If you have already Install RUBY && GEMS Skip to [Install-Gem](#Installing-Gem) Section
 
-- Lets start with updating our apt
+- Let's start with updating our apt
 
   ```bash
 	sudo apt-get update
@@ -51,7 +51,7 @@
 	sudo apt-get install ruby-full
 	```
 
-	Lets verify it's working correctly by opening a text editor and save the fallowing text as test.rb
+	Let's verify it's working correctly by opening a text editor and save the following text as test.rb
 
 	```bash
 	#!/usr/bin/env ruby
@@ -76,9 +76,9 @@
 
 ### Installing Gem
 
-#### After making sure you've all the [Set-Up](#Set-Up) Proccess Completed
+#### After making sure you've all the [Set-Up](#Set-Up) Process Completed
 
-- lets start installing the bundle gem. (Skip this step if you already used Gems Before)
+- Let's start installing the bundle gem. (Skip this step if you already used Gems Before)
 
 	```bash
 	gem install bundler
@@ -91,46 +91,38 @@
 	```
 
 ## Congratulation! Now You Can Start Using DRev
-
 ---
 
 ## Features
 
-As Far as this version realease DRev will check the fallowing issue:
+As far as this version release DRev will check the following issue:
 
-	- Extras/Unessesaries empty lines
-	- Indentations (By Defoult and as far for now, it will check indentations of 2).
+	- Extras/Unessesaries empty lines.
+	- Indentations (By Default and as far, for now, it will check indentations of 2).
 	- Last EoF Empty Line.
 	- Missing Closing or Opening Brackets.
-
 ---
 
 ## How to Use
 
-Isseay and Simple! Just open the folder on your terminal witch you want to check and type the flowwing command!
+Essay and Simple! Just open the folder on your terminal witch you want to check and type the following command!
 
 ```bash
 DRev
 ```
 
-## Author
-
-**Danie Laloush**
-- Page: [dlaloush.me](http://dlaloush.me) (Comming Soon)
-- Linkedin: [Daniel Laloush](https://www.linkedin.com/in/daniel-laloush-0a7331a9)
-- Github: [@Dandush03](https://github.com/Dandush03)
-- Twitter: [@d_laloush](https://twitter.com/d_laloush)
 ---
 
 ## Built With
 
-- HTML5/CSS3
-- SASS Precompailer
-- Visual Studio Code
-- Nu HTML Validator
-- Beautify
-- Font Awesome
-- Google Font
+- Bundle
+- Ruby
+- Bash
+- Vim
+- GitHub
+- Gem
+- Shields.io
+
 ---
 
 ## Support
@@ -138,17 +130,20 @@ DRev
 Reach out to me at one of the following places!
 
 - LinkedIn at [Daniel Laloush](https://www.linkedin.com/in/daniel-laloush-0a7331a9)
-- GitHub at [Dandush03](https://github.com/Dandush03)
 - Twitter at [@d_laloush](https://twitter.com/d_laloush)
 
-Give a ⭐️ if you like this project!
 ---
 
-## 🤝 Contributing
+## Contributing 🤝
 
-Contributions, issues and feature requests are welcome!
+Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](./issues/).
+---
+
+## Acknowledgments
+
+---
 
 ## License
 
@@ -156,3 +151,13 @@ Feel free to check the [issues page](./issues/).
 
 - **[MIT license](http://opensource.org/licenses/mit-license.php)**
 - Copyright 2015 © <a href="http://fvcproductions.com" target="_blank">FVCproductions</a>.
+
+## Author
+
+**Danie Laloush**
+
+- Linkedin: [Daniel Laloush](https://www.linkedin.com/in/daniel-laloush-0a7331a9)
+- Github: [@Dandush03](https://github.com/Dandush03)
+- Twitter: [@d_laloush](https://twitter.com/d_laloush)
+
+Give a ⭐️ if you like this project!
