@@ -8,18 +8,7 @@
 
 > CSS Lint
 
-
-
-- Use <a href="http://recordit.co/" target="_blank">**Recordit**</a> to create quicks screencasts of your desktop and export them as `GIF`s.
-- For terminal sessions, there's <a href="https://github.com/chjj/ttystudio" target="_blank">**ttystudio**</a> which also supports exporting `GIF`s.
-
-**Recordit**
-
-![Recordit GIF](http://g.recordit.co/iLN6A0vSD8.gif)
-
-**ttystudio**
-
-![ttystudio GIF](https://raw.githubusercontent.com/chjj/ttystudio/master/img/example.gif)
+![Recordit GIF](https://raw.githack.com/Dandush03/BLOB/master/DRev/Program.gif)
 
 ---
 
@@ -29,11 +18,11 @@
 
 - [Installation](#Installation)
 - [Features](#features)
-- [Contributing](#contributing)
-- [Team](#team)
-- [FAQ](#faq)
-- [Support](#support)
-- [License](#license)
+- [Contributing](#Contributing)
+- [Author](#Authors)
+- [Acknowledgments](#Acknowledgments)
+- [Support](#Support)
+- [License](#License)
 
 ---
 
@@ -42,11 +31,7 @@
 - [Set-Up](#Set-Up)
 - [Install-Gem](#Installing-Gem)
 
-<img src="https://gj8e4a.dm.files.1drv.com/y4mcxUdMRWunDajyvZOmNZCoYSg08V046vsBV6ATRaDblSY4wHJ-g3jY9XcGAGShEQjxsl0JQcH6zbcJYjKuY0SyXSdAwpajb4rWQOYso-KMrlAozEbrGcou8BFlSZDMWB81o5LxKgTDPvSJv6wHvuxYmpy4F_Hftl7AA6-ghaJ0iMyfNEkwTTouubugGEMkc9IQDURsTMhoht249Kfu47L1Q?width=739&height=503&cropmode=none" width=600></img>
-
-### Clone
-
-- Clone this repo to your local machine using `https://github.com/Dandush03/capstone-build-linter`
+<img src="https://raw.githubusercontent.com/Dandush03/BLOB/master/DRev/Project.png" width=600></img>
 
 ### Set-Up
 
@@ -96,11 +81,23 @@
 ---
 
 ## Features
-## Usage
+
+As Far as this version realease DRev will check the fallowing issue:
+
+	- Extras/Unessesaries empty lines
+	- Indentations (By Defoult and as far for now, it will check indentations of 2).
+	- Last EoF Empty Line.
+	- Missing Closing or Opening Brackets.
 
 ---
 
-## Team
+## Usege
+
+Isseay and Simple! Just open the folder on your terminal witch you want to check and type the flowwing command!
+
+>```DRev```
+
+## Author
 
 > Or Contributors/People
 
@@ -125,18 +122,10 @@
 
 Reach out to me at one of the following places!
 
-- Website at <a href="http://fvcproductions.com" target="_blank">`fvcproductions.com`</a>
-- Twitter at <a href="http://twitter.com/fvcproductions" target="_blank">`@fvcproductions`</a>
-- Insert more social links here.
-
----
-
-## Donations (Optional)
-
-- You could include a <a href="https://cdn.rawgit.com/gratipay/gratipay-badge/2.3.0/dist/gratipay.png" target="_blank">Gratipay</a> link as well.
-
-[![Support via Gratipay](https://cdn.rawgit.com/gratipay/gratipay-badge/2.3.0/dist/gratipay.png)](https://gratipay.com/fvcproductions/)
-
+- Website at [dlaloush.me](http://dlaloush.me)
+- LinkedIn at [Daniel Laloush](https://www.linkedin.com/in/daniel-laloush-0a7331a9)
+- GitHub at [Dandush03](https://github.com/Dandush03)
+- Twitter at [@d_laloush](https://twitter.com/d_laloush)
 
 ---
 
