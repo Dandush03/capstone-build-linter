@@ -18,7 +18,7 @@ files.each do |file|
   counter += 1
   puts msg.file_start(file, counter)
   print init_read(file)
-  puts msg.file_end
   print "\n      NO ERRORS FOUND! GREAT JOB!\n" if init_read(file).split.empty? == true
+  puts msg.file_end
 end
 puts msg.init_end(counter)

@@ -20,22 +20,32 @@ module DRev
       @line = 1
     end
 
-    def indentation_fun(line)
+    # rubocop: disable Metrics/CyclomaticComplexity
+    # rubocop: disable Metrics/PerceivedComplexity
+    def indentation_fun(line, index)
       if @idnt != @cnt && line.split.empty? == false
         @log.log("W_201 #{@path} #{@line} #{@cnt} #{@idnt}")
-      elsif @idnt != @cnt && line.split.empty? == true
-        @log.log("W_204 #{@path} #{@line} #{@cnt} #{@idnt}")
+
+      elsif line.split.empty? == true
+
+        return if @file.line_num - 1 == index
+
+        return if @lines[index + 1].match(/{/)
+
+        return if @lines[index + 1].match(/,/)
+
+        @log.log("W_205 #{@path} #{@line} #{@cnt} #{@idnt}")
       end
     end
 
     def indentation
       reset
-      @lines.each do |line|
+      @lines.each_with_index do |line, index|
         @idnt = line[/\A */].size
         @cnt -= 2 if line.match(/}/)
         break if indent_error_opening(@cnt)
 
-        indentation_fun(line)
+        indentation_fun(line, index)
         @cnt += 2 if line.match(/{/)
         @line += 1
       end
@@ -54,8 +64,6 @@ module DRev
     def indent_error_closing(indent, counter)
       bool = false
       if indent < counter
-        # @log.error('Missing Bracked', 101, 'EoF', temp, 'Indentation')
-
         @log.log("E_101 #{@path} 'EoF'")
         bool = true
       end
@@ -63,38 +71,43 @@ module DRev
     end
 
     def line_after_block
+      cnt = 0
       @lines.each_with_index do |line, index|
         return 1 if index > @lines.length - 2
 
+        cnt += 1 if line.match(/{/)
+        cnt -= 1 if line.match(/}/)
         next unless line.match(/}/)
 
-        next if @lines[index + 1].strip.empty?
+        next if @lines[index + 1].strip.empty? || @lines[index + 1].match(/}/)
 
         @log.log("W_202 #{@path} #{index + 1} \t \t")
       end
     end
+    # rubocop: enable Metrics/CyclomaticComplexity
+    # rubocop: enable Metrics/PerceivedComplexity
 
     def end_ln
       temp = @lines[@file.line_num - 1]
-      temp2 = @lines[@file.line_num - 2]
-      end_ln_b(temp, temp2)
-      end_ln_a(temp)
+      temp1 = @lines[@file.line_num]
+      end_ln_b(temp, temp1)
+      end_ln_a(temp, temp1)
     end
 
-    def end_ln_b(temp, temp2)
-      return unless temp.nil? || temp.strip.empty?
-
-      return unless temp2.nil? || temp2.strip.empty?
-
-      @log.log("W_203 #{@path} #{@lines.length + 1} \t \t")
-    end
-
-    def end_ln_a(temp)
+    def end_ln_b(temp, temp1)
       return if temp.nil? || temp.strip.empty?
 
-      return unless @lines[@file.line_num - 1].match(/}/)
+      return if temp1.nil? || temp1.strip.empty?
 
-      @log.log("W_204 #{@path} #{@lines.length} \t \t")
+      @log.log("W_204 #{@path} #{@lines.length + 1} \t \t")
+    end
+
+    def end_ln_a(temp, temp1)
+      return unless temp.nil? || temp.strip.empty?
+
+      return unless temp1.nil? || temp1.strip.empty?
+
+      @log.log("W_203 #{@path} #{@lines.length} \t \t")
     end
 
     def scn

@@ -36,7 +36,7 @@ module DRev
         @error_list += "#{log[3]} "
         @error_list += "Error:[#{log[1]}]\n".red.bold if log[0] == 1
         @error_list += "Warnning:[#{log[1]}]\n".yellow.bold if log[0] == 2
-        @error_list += "      #{log[7]}/Line #{log[6]}: ".cyan
+        @error_list += "      #{log[7]} Line #{log[6]}: ".cyan
         @error_list += "#{log[4]}\n"
         @error_list += "\n".red if log[5].split.empty?
         @error_list += "#{log[5]}\n\n".red unless log[5].split.empty?

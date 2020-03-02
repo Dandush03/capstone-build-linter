@@ -74,6 +74,19 @@ module DRev
       log << path
       log
     end
+
+    def W_205(path, line, _exp = nil, _act = nil)
+      log = []
+      log << 2
+      log << 205
+      log << 2
+      log << 'Extra Line'
+      log << 'Unexpected Empty Line'
+      log << ''
+      log << line
+      log << path
+      log
+    end
   end
 end
 # rubocop: enable Naming/MethodName
