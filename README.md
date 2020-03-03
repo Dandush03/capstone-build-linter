@@ -133,7 +133,7 @@ As far as this version release DRev will check the following issue:
 
 	```css
 	1	body {
-	2		width: 101px;
+	2	  width: 101px;
 	3	}
 	4
 	```
@@ -144,7 +144,7 @@ As far as this version release DRev will check the following issue:
 	
 	```css 
 	1	body {
-	2		width: 101px;
+	2	  width: 101px;
 	3	
 	```
 
@@ -152,7 +152,7 @@ As far as this version release DRev will check the following issue:
 
 	```css
 	1	body {
-	2		width: 101px;
+	2	  width: 101px;
 	3	}
 	4
 	```
@@ -163,10 +163,10 @@ As far as this version release DRev will check the following issue:
 
 	```css
 	1	body {
-	2		width: 101px;
+	2	  width: 101px;
 	3	}
 	4	section {
-	5		height: 300px;
+	5	  height: 300px;
 	6	}
 	```
 
@@ -174,11 +174,11 @@ As far as this version release DRev will check the following issue:
 
 	```css
 	1	body {
-	2		width: 101px;
+	2	  width: 101px;
 	3	}
 	4
 	5	section {
-	6		height: 300px;
+	6	  height: 300px;
 	7	}
 	8
 	```
@@ -189,11 +189,11 @@ As far as this version release DRev will check the following issue:
 
 	```css
 	1	body {
-	2		width: 101px;
+	2	  width: 101px;
 	3	}
 	4
 	5	section {
-	6		height: 300px;
+	6	  height: 300px;
 	7	}
 	8
   9
@@ -203,11 +203,11 @@ As far as this version release DRev will check the following issue:
 
 	```css
 	1	body {
-	2		width: 101px;
+	2	  width: 101px;
 	3	}
 	4
 	5	section {
-	6		height: 300px;
+	6	  height: 300px;
 	7	}
 	8
 	```
@@ -218,11 +218,11 @@ As far as this version release DRev will check the following issue:
 
 	```css
 	1	body {
-	2		width: 101px;
+	2	  width: 101px;
 	3	}
 	4
 	5	section {
-	6		height: 300px;
+	6	  height: 300px;
 	7	}
 	```
 
@@ -230,11 +230,11 @@ As far as this version release DRev will check the following issue:
 
 	```css
 	1	body {
-	2		width: 101px;
+	2	  width: 101px;
 	3	}
 	4
 	5	section {
-	6		height: 300px;
+	6	  height: 300px;
 	7	}
 	8
 	```
@@ -245,7 +245,7 @@ As far as this version release DRev will check the following issue:
 
 	```css
 	1	body {
-	2		width: 101px;
+	2	  width: 101px;
 	3
 	4	}
 	5
@@ -255,7 +255,7 @@ As far as this version release DRev will check the following issue:
 
 	```css
 	1	body {
-	2		width: 101px;
+	2	  width: 101px;
 	3	}
 	4
 	```
