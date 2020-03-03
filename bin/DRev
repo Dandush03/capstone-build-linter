@@ -1,0 +1,24 @@
+#!/usr/bin/env ruby
+
+require_relative '../lib/scanner.rb'
+require_relative '../lib/init_msg.rb'
+
+def init_read(file)
+  read = DRev::Scanner.new(file)
+  str = read.scn
+  str
+end
+
+msg = DRev::InitMsg.new
+
+files = Dir.glob(File.join('**', '*.css')).reject { |f| f['spec/'] }
+puts msg.init_start(files.count)
+counter = 0
+files.each do |file|
+  counter += 1
+  puts msg.file_start(file, counter)
+  print init_read(file)
+  print "\n      NO ERRORS FOUND! GREAT JOB!\n" if init_read(file).split.empty? == true
+  puts msg.file_end
+end
+puts msg.init_end(counter)
