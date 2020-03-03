@@ -111,6 +111,25 @@ As far as this version release DRev will check the following issue:
 ---
 ## Error List & Examples
 
+- ### E_101 (Mising Brackets)
+
+	Bad Code
+	
+	```css 
+	1	body {
+	2	  width: 101px;
+	3	
+	```
+
+	Good Code
+
+	```css
+	1	body {
+	2	  width: 101px;
+	3	}
+	4
+	```
+
 - ### W_201 (Indentation)
 
 	Bad Code
@@ -138,24 +157,6 @@ As far as this version release DRev will check the following issue:
 	4
 	```
 
-- ### E_101 (Mising Brackets)
-
-	Bad Code
-	
-	```css 
-	1	body {
-	2	  width: 101px;
-	3	
-	```
-
-	Good Code
-
-	```css
-	1	body {
-	2	  width: 101px;
-	3	}
-	4
-	```
 
 - ### W_202 (Mising Line)
 
