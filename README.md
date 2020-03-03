@@ -18,6 +18,8 @@
 	- [Set-Up](#Set-Up)
 	- [Install-Gem](#Installing-Gem)
 - [Features](#features)
+	-	[Error List & Examples](#Error-List-&-Examples)
+		- [W_101](#W_101-Mising-Brackets)
 - [How to Use](#How-to-Use)
 - [Built With](#Built-With)
 - [Support](#Support)
@@ -102,6 +104,119 @@ As far as this version release DRev will check the following issue:
 	- Last EoF Empty Line.
 	- Missing Closing or Opening Brackets.
 ---
+## Error List & Examples
+
+- ### W_101 (Mising Brackets)
+
+	Bad Code
+		```css
+		body {
+			width: 101px;
+		```
+
+	Good Code
+		```css
+		body {
+			width: 101px;
+		}
+
+		```
+
+- ### W_202 (Mising Line)
+
+	Bad Code
+		```css
+		body {
+			width: 101px;
+		}
+		section {
+			height: 300px;
+		}
+		```
+
+	Good Code
+		```css
+		body {
+			width: 101px;
+		}
+
+		section {
+			height: 300px;
+		}
+
+		```
+
+- ### W_203 (End of File)
+
+	Bad Code
+		```css
+		body {
+			width: 101px;
+		}
+
+		section {
+			height: 300px;
+		}
+
+
+
+		```
+
+	Good Code
+		```css
+		body {
+			width: 101px;
+		}
+
+		section {
+			height: 300px;
+		}
+
+		```
+
+- ### W_204 (Mising Line)
+
+	Bad Code
+		```css
+		body {
+			width: 101px;
+		}
+
+		section {
+			height: 300px;
+		}
+		```
+
+	Good Code
+		```css
+		body {
+			width: 101px;
+		}
+
+		section {
+			height: 300px;
+		}
+
+		```
+
+- ### W_205 (Exra Line)
+
+	Bad Code
+		```css
+		body {
+			width: 101px;
+
+		}
+		
+		```
+
+	Good Code
+		```css
+		body {
+			width: 101px;
+		}
+
+		```
 
 ## How to Use
 
