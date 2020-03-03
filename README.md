@@ -109,12 +109,15 @@ As far as this version release DRev will check the following issue:
 - ### W_101 (Mising Brackets)
 
 	Bad Code
+
 		```css
 		body {
 			width: 101px;
+		
 		```
 
 	Good Code
+
 		```css
 		body {
 			width: 101px;
@@ -125,6 +128,7 @@ As far as this version release DRev will check the following issue:
 - ### W_202 (Mising Line)
 
 	Bad Code
+
 		```css
 		body {
 			width: 101px;
@@ -135,6 +139,7 @@ As far as this version release DRev will check the following issue:
 		```
 
 	Good Code
+
 		```css
 		body {
 			width: 101px;
@@ -149,6 +154,7 @@ As far as this version release DRev will check the following issue:
 - ### W_203 (End of File)
 
 	Bad Code
+
 		```css
 		body {
 			width: 101px;
@@ -163,6 +169,7 @@ As far as this version release DRev will check the following issue:
 		```
 
 	Good Code
+
 		```css
 		body {
 			width: 101px;
@@ -177,6 +184,7 @@ As far as this version release DRev will check the following issue:
 - ### W_204 (Mising Line)
 
 	Bad Code
+
 		```css
 		body {
 			width: 101px;
@@ -188,6 +196,7 @@ As far as this version release DRev will check the following issue:
 		```
 
 	Good Code
+
 		```css
 		body {
 			width: 101px;
@@ -202,15 +211,17 @@ As far as this version release DRev will check the following issue:
 - ### W_205 (Exra Line)
 
 	Bad Code
+
 		```css
 		body {
 			width: 101px;
 
 		}
-		
+
 		```
 
 	Good Code
+	
 		```css
 		body {
 			width: 101px;
