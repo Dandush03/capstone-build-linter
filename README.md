@@ -19,7 +19,12 @@
 	- [Install-Gem](#Installing-Gem)
 - [Features](#features)
 	-	[Error List & Examples](#Error-List-&-Examples)
-		- [W_101](#W_101-Mising-Brackets)
+		- [E_101](#E_101-Mising-Brackets)
+		- [W_201](#W_202-Indentation)
+		- [W_202](#W_202-Mising-Line)
+		- [W_203](#W_203-Mising-End-of-File)
+		- [W_204](#W_204-Mising-Line)
+		- [W_205](#W_205-Mising-Extra)
 - [How to Use](#How-to-Use)
 - [Built With](#Built-With)
 - [Support](#Support)
@@ -106,7 +111,34 @@ As far as this version release DRev will check the following issue:
 ---
 ## Error List & Examples
 
-- ### W_101 (Mising Brackets)
+- ### W_201 (Indentation)
+
+	Bad Code
+	
+	```css 
+	1	body {
+	2			width: 101px;
+	3	}
+	```
+
+	or
+
+	```css 
+	1	body {
+	2	width: 101px;
+	3	}
+	```
+
+	Good Code
+
+	```css
+	1	body {
+	2		width: 101px;
+	3	}
+	4
+	```
+
+- ### E_101 (Mising Brackets)
 
 	Bad Code
 	
