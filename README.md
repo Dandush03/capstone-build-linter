@@ -109,38 +109,38 @@ As far as this version release DRev will check the following issue:
 - ### W_101 (Mising Brackets)
 
 	Bad Code
-
-		```css
+	
+	```css 
 		body {
 			width: 101px;
 		
-		```
+	```
 
 	Good Code
 
-		```css
+	```css
 		body {
 			width: 101px;
 		}
 
-		```
+	```
 
 - ### W_202 (Mising Line)
 
 	Bad Code
 
-		```css
+	```css
 		body {
 			width: 101px;
 		}
 		section {
 			height: 300px;
 		}
-		```
+	```
 
 	Good Code
 
-		```css
+	```css
 		body {
 			width: 101px;
 		}
@@ -149,85 +149,91 @@ As far as this version release DRev will check the following issue:
 			height: 300px;
 		}
 
-		```
+	```
 
 - ### W_203 (End of File)
 
 	Bad Code
 
-		```css
-		body {
-			width: 101px;
-		}
-
-		section {
-			height: 300px;
-		}
-
-
-
-		```
+	```css
+	1
+	2	body {
+	3		width: 101px;
+	4	}
+	5
+	6 section {
+	7		height: 300px;
+	8	}
+	9
+	10
+	11
+	```
 
 	Good Code
 
-		```css
-		body {
-			width: 101px;
-		}
-
-		section {
-			height: 300px;
-		}
-
-		```
+	```css
+	1
+	2	body {
+	3		width: 101px;
+	4	}
+	5
+	6	section {
+	7		height: 300px;
+	8	}
+	9
+	```
 
 - ### W_204 (Mising Line)
 
 	Bad Code
 
-		```css
-		body {
-			width: 101px;
-		}
-
-		section {
-			height: 300px;
-		}
-		```
+	```css
+	1
+	2	body {
+	3		width: 101px;
+	4	}
+	5
+	6	section {
+	7		height: 300px;
+	8	}
+	```
 
 	Good Code
 
-		```css
-		body {
-			width: 101px;
-		}
-
-		section {
-			height: 300px;
-		}
-
-		```
+	```css
+	1
+	2	body {
+	3		width: 101px;
+	4	}
+	5
+	6	section {
+	7		height: 300px;
+	8	}
+	9
+	```
 
 - ### W_205 (Exra Line)
 
 	Bad Code
 
-		```css
-		body {
-			width: 101px;
-
-		}
-
-		```
+	```css
+	1
+	2	body {
+	3		width: 101px;
+	4
+	5	}
+	6
+	```
 
 	Good Code
-	
-		```css
-		body {
-			width: 101px;
-		}
 
-		```
+	```css
+	1
+	2	body {
+	3		width: 101px;
+	4	}
+	5
+	```
 
 ## How to Use
 
