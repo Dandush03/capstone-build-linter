@@ -111,18 +111,18 @@ As far as this version release DRev will check the following issue:
 	Bad Code
 	
 	```css 
-		body {
-			width: 101px;
-		
+	1	body {
+	2		width: 101px;
+	3	
 	```
 
 	Good Code
 
 	```css
-		body {
-			width: 101px;
-		}
-
+	1	body {
+	2		width: 101px;
+	3	}
+	4
 	```
 
 - ### W_202 (Mising Line)
@@ -130,25 +130,25 @@ As far as this version release DRev will check the following issue:
 	Bad Code
 
 	```css
-		body {
-			width: 101px;
-		}
-		section {
-			height: 300px;
-		}
+	1	body {
+	2		width: 101px;
+	3	}
+	4	section {
+	5		height: 300px;
+	6	}
 	```
 
 	Good Code
 
 	```css
-		body {
-			width: 101px;
-		}
-
-		section {
-			height: 300px;
-		}
-
+	1	body {
+	2		width: 101px;
+	3	}
+	4
+	5	section {
+	6		height: 300px;
+	7	}
+	8
 	```
 
 - ### W_203 (End of File)
@@ -156,31 +156,28 @@ As far as this version release DRev will check the following issue:
 	Bad Code
 
 	```css
-	1
-	2	body {
-	3		width: 101px;
-	4	}
-	5
-	6 section {
-	7		height: 300px;
-	8	}
-	9
-	10
-	11
+	1	body {
+	2		width: 101px;
+	3	}
+	4
+	5	section {
+	6		height: 300px;
+	7	}
+	8
+  9
 	```
 
 	Good Code
 
 	```css
-	1
-	2	body {
-	3		width: 101px;
-	4	}
-	5
-	6	section {
-	7		height: 300px;
-	8	}
-	9
+	1	body {
+	2		width: 101px;
+	3	}
+	4
+	5	section {
+	6		height: 300px;
+	7	}
+	8
 	```
 
 - ### W_204 (Mising Line)
@@ -188,28 +185,26 @@ As far as this version release DRev will check the following issue:
 	Bad Code
 
 	```css
-	1
-	2	body {
-	3		width: 101px;
-	4	}
-	5
-	6	section {
-	7		height: 300px;
-	8	}
+	1	body {
+	2		width: 101px;
+	3	}
+	4
+	5	section {
+	6		height: 300px;
+	7	}
 	```
 
 	Good Code
 
 	```css
-	1
-	2	body {
-	3		width: 101px;
-	4	}
-	5
-	6	section {
-	7		height: 300px;
-	8	}
-	9
+	1	body {
+	2		width: 101px;
+	3	}
+	4
+	5	section {
+	6		height: 300px;
+	7	}
+	8
 	```
 
 - ### W_205 (Exra Line)
@@ -217,22 +212,20 @@ As far as this version release DRev will check the following issue:
 	Bad Code
 
 	```css
-	1
-	2	body {
-	3		width: 101px;
-	4
-	5	}
-	6
+	1	body {
+	2		width: 101px;
+	3
+	4	}
+	5
 	```
 
 	Good Code
 
 	```css
-	1
-	2	body {
-	3		width: 101px;
-	4	}
-	5
+	1	body {
+	2		width: 101px;
+	3	}
+	4
 	```
 
 ## How to Use
