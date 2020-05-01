@@ -4,7 +4,7 @@
 ![GitHub followers](https://img.shields.io/github/followers/Dandush03?label=Dandush03&style=social)
 ![Twitter URL](https://img.shields.io/twitter/url?label=d_laloush&style=social&url=https%3A%2F%2Ftwitter.com%2Fd_laloush)
 
-> This is a Microverse Captsopne Project
+> This is a Microverse Capstone Project
 
 > CSS Lint
 
@@ -44,7 +44,7 @@
 
 ### Set-Up
 
-#### If you have already Install RUBY && GEMS Skip to [Install-Gem](#Installing-Gem) Section
+#### If you have already Install RUBY && GEMS skip to [Install-Gem](#Installing-Gem) Section
 
 - Let's start with updating our apt
 
@@ -58,7 +58,7 @@
 	sudo apt-get install ruby-full
 	```
 
-	Let's verify it's working correctly by opening a text editor and save the following text as test.rb
+	Let's verify it's working correctly by opening a text editor and saving the following text as test.rb
 
 	```bash
 	#!/usr/bin/env ruby
@@ -83,7 +83,7 @@
 
 ### Installing Gem
 
-#### After making sure you've all the [Set-Up](#Set-Up) Process Completed
+#### After making sure you've completed the [Set-Up](#Set-Up) process
 
 - Let's start installing the bundle gem. (Skip this step if you already used Gems Before)
 
@@ -102,9 +102,9 @@
 
 ## Features
 
-As far as this version release DRev will check the following issue:
+In this version release, DRev will check the following issues:
 
-	- Extras/Unessesaries empty lines.
+	- Extra/Unnecessary empty lines.
 	- Indentations (By Default and as far, for now, it will check indentations of 2).
 	- Last EoF Empty Line.
 	- Missing Closing or Opening Brackets.
@@ -263,7 +263,7 @@ As far as this version release DRev will check the following issue:
 
 ## How to Use
 
-Essay and Simple! Just open the folder on your terminal witch you want to check and type the following command!
+Easy and simple! Just open the folder you want to check on your terminal and type the following command!
 
 ```bash
 DRev
