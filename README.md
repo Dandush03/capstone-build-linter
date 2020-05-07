@@ -315,10 +315,10 @@ Feel free to check the [issues page](./issues/).
 
 ## Author
 
-**Danie Laloush**
+**Daniel Laloush**
 
-- Portafolio: [dlaloush.me](https://dlaloush.me) (Comming Soon)
-- Linkedin: [Daniel Laloush](https://www.linkedin.com/in/daniel-laloush-0a7331a9)
+- Portfolio: [dlaloush.me](https://dlaloush.me) (Comming Soon)
+- LinkedIn: [Daniel Laloush](https://www.linkedin.com/in/daniel-laloush-0a7331a9)
 - Github: [@Dandush03](https://github.com/Dandush03)
 - Twitter: [@d_laloush](https://twitter.com/d_laloush)
 
