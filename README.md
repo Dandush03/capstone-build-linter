@@ -75,7 +75,7 @@
 
 	If it didn't work, check [Ruby Installation Page](https://www.ruby-lang.org/en/documentation/installation/)
 
-- All that is left is to install Gem Package by typing in our Terminal
+- All that is left is to install the Gem Package by typing in our Terminal
 
 	```bash
 	sudo apt-get install rubygems
@@ -301,8 +301,8 @@ Feel free to check the [issues page](./issues/).
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Thanks to Microverse for it Support!
+- Hat tip to anyone who's code was used
+- Thanks to Microverse for its Support!
 
 ---
 
